@@ -13,8 +13,10 @@ export default {
     RED_DARK: "#AA2834",
   },
   FONT_FAMILY: {
-    REGULAR: "Roboto_400Regular",
-    BOLD: "Roboto_700Bold",
+    REGULAR: "Poppins_400Regular",
+    MEDIUM: "Poppins_500Medium",
+    BOLD: "Poppins_700Bold",
+    EXTRABOLD: "Poppins_800ExtraBold",
   },
   FONT_SIZE: {
     SM: 14,
