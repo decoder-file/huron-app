@@ -1,7 +1,10 @@
 import { View } from "react-native";
 
+import Image from "@assets/geometry/StepThreeImg.png";
+
 import {
   Container,
+  Img,
   Title,
   Description,
   Button,
@@ -12,7 +15,7 @@ import {
 export function StepThree() {
   return (
     <Container>
-      <View />
+      <Img source={Image} />
       <Contents>
         <View>
           <Title>Defina suas tarefas</Title>

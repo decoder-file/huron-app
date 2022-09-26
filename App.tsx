@@ -10,7 +10,7 @@ import {
 import theme from "./src/theme";
 
 import { ActivityIndicator, StatusBar } from "react-native";
-import { StepFour } from "@screens/onboarding/StepFour";
+import { StepTwo } from "@screens/onboarding/StepTwo";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -27,7 +27,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      {fontsLoaded ? <StepFour /> : <ActivityIndicator />}
+      {fontsLoaded ? <StepTwo /> : <ActivityIndicator />}
     </ThemeProvider>
   );
 }

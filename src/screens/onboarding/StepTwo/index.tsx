@@ -1,7 +1,10 @@
 import { View } from "react-native";
 
+import Image from "@assets/geometry/StepTwoImg.png";
+
 import {
   Container,
+  Img,
   Title,
   Description,
   Button,
@@ -12,7 +15,7 @@ import {
 export function StepTwo() {
   return (
     <Container>
-      <View />
+      <Img source={Image} />
       <Contents>
         <View>
           <Title>Acompanhe sua{"\n"}agenda</Title>

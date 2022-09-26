@@ -6,7 +6,10 @@ export const Container = styled.View`
   flex: 1;
   justify-content: space-between;
   background-color: ${({ theme }) => theme.COLORS.WHITE};
-  padding: 24px;
+`;
+
+export const Img = styled.Image`
+  width: 100%;
 `;
 
 export const Title = styled.Text`
@@ -35,6 +38,7 @@ export const Button = styled(NextStepButton)`
 export const Contents = styled.View`
   justify-content: space-between;
   height: 50%;
+  padding: 24px;
 `;
 
 export const ContainerButton = styled.View`
