@@ -11,6 +11,7 @@ import theme from "./src/theme";
 
 import { StepOne } from "@screens/onboarding/StepOne";
 import { ActivityIndicator, StatusBar } from "react-native";
+import { StepTwo } from "@screens/onboarding/StepTwo";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -27,7 +28,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      {fontsLoaded ? <StepOne /> : <ActivityIndicator />}
+      {fontsLoaded ? <StepTwo /> : <ActivityIndicator />}
     </ThemeProvider>
   );
 }

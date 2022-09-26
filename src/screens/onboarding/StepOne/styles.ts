@@ -25,6 +25,7 @@ export const ButtonStart = styled(Button)`
 export const Title = styled.Text`
   font-family: ${({ theme }) => theme.FONT_FAMILY.REGULAR};
   font-size: ${({ theme }) => theme.FONT_SIZE.LG}px;
+  color: ${({ theme }) => theme.COLORS.BLACK};
   text-align: center;
   line-height: 27px;
 `;
