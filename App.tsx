@@ -1,4 +1,5 @@
 /* eslint-disable camelcase */
+import { ActivityIndicator, StatusBar } from 'react-native'
 import { ThemeProvider } from 'styled-components'
 
 import {
@@ -11,8 +12,7 @@ import {
 
 import theme from './src/theme'
 
-import { ActivityIndicator, StatusBar } from 'react-native'
-import { Registration } from '@screens/Registration'
+import { Routes } from '@routes/index'
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -29,7 +29,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      {fontsLoaded ? <Registration /> : <ActivityIndicator />}
+      {fontsLoaded ? <Routes /> : <ActivityIndicator />}
     </ThemeProvider>
   )
 }
