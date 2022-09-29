@@ -1,16 +1,18 @@
-import { ThemeProvider } from "styled-components";
+/* eslint-disable camelcase */
+import { ThemeProvider } from 'styled-components'
+
 import {
   useFonts,
   Poppins_400Regular,
   Poppins_500Medium,
   Poppins_700Bold,
   Poppins_800ExtraBold,
-} from "@expo-google-fonts/poppins";
+} from '@expo-google-fonts/poppins'
 
-import theme from "./src/theme";
+import theme from './src/theme'
 
-import { ActivityIndicator, StatusBar } from "react-native";
-import { Login } from "@screens/Login";
+import { ActivityIndicator, StatusBar } from 'react-native'
+import { Registration } from '@screens/Registration'
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -18,7 +20,7 @@ export default function App() {
     Poppins_500Medium,
     Poppins_700Bold,
     Poppins_800ExtraBold,
-  });
+  })
 
   return (
     <ThemeProvider theme={theme}>
@@ -27,7 +29,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      {fontsLoaded ? <Login /> : <ActivityIndicator />}
+      {fontsLoaded ? <Registration /> : <ActivityIndicator />}
     </ThemeProvider>
-  );
+  )
 }
