@@ -1,4 +1,4 @@
-import Image from "@assets/geometry/StepFiveImg.png";
+import Image from '@assets/geometry/StepFiveImg.png'
 
 import {
   Container,
@@ -7,18 +7,18 @@ import {
   Button,
   Contents,
   ContainerButton,
-} from "./styles";
+} from './styles'
 
 export function StepFive() {
   return (
     <Container>
       <Img source={Image} />
       <Contents>
-        <Title>Agora vamos concluir {"\n"} seu cadastro!</Title>
+        <Title>Agora vamos concluir {'\n'} seu cadastro!</Title>
         <ContainerButton>
           <Button />
         </ContainerButton>
       </Contents>
     </Container>
-  );
+  )
 }

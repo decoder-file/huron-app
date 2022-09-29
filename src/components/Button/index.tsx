@@ -1,12 +1,13 @@
-import { TouchableOpacityProps } from "react-native";
+import { TouchableOpacityProps } from 'react-native'
+
+import { Container, Title } from './styles'
 
 export interface ButtonProps extends TouchableOpacityProps {
-  title: string;
-  type?: "primary" | "secondary";
-  icon?: React.ReactNode;
+  title: string
+  type?: 'primary' | 'secondary'
+  // eslint-disable-next-line no-undef
+  icon?: React.ReactNode
 }
-
-import { Container, Title } from "./styles";
 
 export function Button({ title, icon, ...rest }: ButtonProps) {
   return (
@@ -14,5 +15,5 @@ export function Button({ title, icon, ...rest }: ButtonProps) {
       {icon && icon}
       <Title>{title}</Title>
     </Container>
-  );
+  )
 }

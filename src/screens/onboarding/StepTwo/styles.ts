@@ -1,16 +1,16 @@
-import styled from "styled-components/native";
+import styled from 'styled-components/native'
 
-import { NextStepButton } from "@components/NextStepButton";
+import { NextStepButton } from '@components/NextStepButton'
 
 export const Container = styled.View`
   flex: 1;
   justify-content: space-between;
   background-color: ${({ theme }) => theme.COLORS.WHITE};
-`;
+`
 
 export const Img = styled.Image`
   width: 100%;
-`;
+`
 
 export const Title = styled.Text`
   font-family: ${({ theme }) => theme.FONT_FAMILY.BOLD};
@@ -19,7 +19,7 @@ export const Title = styled.Text`
   text-align: left;
   line-height: 36px;
   margin-bottom: 16px;
-`;
+`
 
 export const Description = styled.Text`
   font-family: ${({ theme }) => theme.FONT_FAMILY.REGULAR};
@@ -28,19 +28,19 @@ export const Description = styled.Text`
   text-align: left;
   line-height: 21px;
   padding-right: 15px;
-`;
+`
 
 export const Button = styled(NextStepButton)`
   border-top-color: #a5a6f6;
   border-top-width: 2px;
-`;
+`
 
 export const Contents = styled.View`
   justify-content: space-between;
   height: 50%;
   padding: 24px;
-`;
+`
 
 export const ContainerButton = styled.View`
   align-items: flex-end;
-`;
+`

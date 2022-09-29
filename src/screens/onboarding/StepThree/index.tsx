@@ -1,6 +1,6 @@
-import { View } from "react-native";
+import { View } from 'react-native'
 
-import Image from "@assets/geometry/StepThreeImg.png";
+import Image from '@assets/geometry/StepThreeImg.png'
 
 import {
   Container,
@@ -10,7 +10,7 @@ import {
   Button,
   Contents,
   ContainerButton,
-} from "./styles";
+} from './styles'
 
 export function StepThree() {
   return (
@@ -26,5 +26,5 @@ export function StepThree() {
         </ContainerButton>
       </Contents>
     </Container>
-  );
+  )
 }

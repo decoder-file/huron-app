@@ -1,12 +1,13 @@
-import { TouchableOpacityProps } from "react-native";
+import { TouchableOpacityProps } from 'react-native'
+
+import { Container, Title, ContainerImg } from './styles'
 
 interface FunctionSelectButtonProps extends TouchableOpacityProps {
-  title: string;
-  img: React.ReactNode;
-  select: boolean;
+  title: string
+  // eslint-disable-next-line no-undef
+  img: React.ReactNode
+  select: boolean
 }
-
-import { Container, Title, ContainerImg } from "./styles";
 
 export function FunctionSelectButton({
   title,
@@ -18,12 +19,12 @@ export function FunctionSelectButton({
     <Container
       activeOpacity={0.8}
       {...rest}
-      style={{ borderColor: select ? "#48e1bd" : "#becada" }}
+      style={{ borderColor: select ? '#48e1bd' : '#becada' }}
     >
-      <ContainerImg style={{ backgroundColor: select && "#48e1bd" }}>
+      <ContainerImg style={{ backgroundColor: select && '#48e1bd' }}>
         {img}
       </ContainerImg>
       <Title>{title}</Title>
     </Container>
-  );
+  )
 }

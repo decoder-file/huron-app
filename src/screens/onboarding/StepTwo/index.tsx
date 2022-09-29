@@ -1,6 +1,6 @@
-import { View } from "react-native";
+import { View } from 'react-native'
 
-import Image from "@assets/geometry/StepTwoImg.png";
+import Image from '@assets/geometry/StepTwoImg.png'
 
 import {
   Container,
@@ -10,7 +10,7 @@ import {
   Button,
   Contents,
   ContainerButton,
-} from "./styles";
+} from './styles'
 
 export function StepTwo() {
   return (
@@ -18,7 +18,7 @@ export function StepTwo() {
       <Img source={Image} />
       <Contents>
         <View>
-          <Title>Acompanhe sua{"\n"}agenda</Title>
+          <Title>Acompanhe sua{'\n'}agenda</Title>
           <Description>
             Não se preocupe se você tiver problemas para determinar seus
             objetivos, podemos ajudá-lo a determinar seus objetivos e acompanhar
@@ -30,5 +30,5 @@ export function StepTwo() {
         </ContainerButton>
       </Contents>
     </Container>
-  );
+  )
 }

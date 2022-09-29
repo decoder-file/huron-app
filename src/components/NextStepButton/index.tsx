@@ -1,8 +1,8 @@
-import { TouchableOpacityProps } from "react-native";
+import { TouchableOpacityProps } from 'react-native'
 
-import { CaretRight } from "phosphor-react-native";
+import { CaretRight } from 'phosphor-react-native'
 
-import { Container, Contents } from "./styles";
+import { Container, Contents } from './styles'
 
 export function NextStepButton({ ...rest }: TouchableOpacityProps) {
   return (
@@ -11,5 +11,5 @@ export function NextStepButton({ ...rest }: TouchableOpacityProps) {
         <CaretRight size={25} color="#FFFFFF" weight="bold" />
       </Contents>
     </Container>
-  );
+  )
 }

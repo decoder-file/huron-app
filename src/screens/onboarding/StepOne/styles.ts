@@ -1,6 +1,6 @@
-import styled from "styled-components/native";
+import styled from 'styled-components/native'
 
-import { Button } from "@components/Button";
+import { Button } from '@components/Button'
 
 export const Container = styled.View`
   flex: 1;
@@ -8,19 +8,20 @@ export const Container = styled.View`
   align-items: center;
   background-color: ${({ theme }) => theme.COLORS.GREEN_200};
   padding: 24px;
-`;
+`
 
 export const ContainerImg = styled.View`
   align-items: center;
-`;
+`
 
 export const Img = styled.Image`
   margin-bottom: 50px;
-`;
+`
 
 export const ButtonStart = styled(Button)`
   background-color: ${({ theme }) => theme.COLORS.WHITE};
-`;
+  color: ${({ theme }) => theme.COLORS.GREEN_200};
+`
 
 export const Title = styled.Text`
   font-family: ${({ theme }) => theme.FONT_FAMILY.REGULAR};
@@ -28,4 +29,4 @@ export const Title = styled.Text`
   color: ${({ theme }) => theme.COLORS.BLACK};
   text-align: center;
   line-height: 27px;
-`;
+`
