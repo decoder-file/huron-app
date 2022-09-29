@@ -1,3 +1,6 @@
+import { useState } from 'react'
+
+import { useNavigation } from '@react-navigation/native'
 import { View } from 'react-native'
 
 import { Syringe, FirstAidKit, Pill, Bandaids } from 'phosphor-react-native'
@@ -15,10 +18,11 @@ import {
   ContainerButton,
   ContainerFunctionSelect,
 } from './styles'
-import { useState } from 'react'
 
 export function StepFour() {
   const [selectFunction, setSelectFunction] = useState('')
+
+  const navigation = useNavigation()
 
   function Select(text: string) {
     setSelectFunction(text)
@@ -62,7 +66,7 @@ export function StepFour() {
           </ContainerFunctionSelect>
         </View>
         <ContainerButton>
-          <Button />
+          <Button onPress={() => navigation.navigate('stepFive')} />
         </ContainerButton>
       </Contents>
     </Container>

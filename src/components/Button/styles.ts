@@ -14,6 +14,6 @@ export const Container = styled.TouchableOpacity`
 export const Title = styled.Text<ButtonProps>`
   font-family: ${({ theme }) => theme.FONT_FAMILY.MEDIUM};
   font-size: ${({ theme }) => theme.FONT_SIZE.MD}px;
-  color: ${({ type }) => (type === 'primary' ? '#48E1B' : '#FFFFFF')};
+  color: ${({ type }) => (type === 'primary' ? '#48E1B' : '#000')};
   margin-left: 10px;
 `

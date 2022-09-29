@@ -1,3 +1,6 @@
+import { View } from 'react-native'
+import { useNavigation } from '@react-navigation/native'
+
 import { SignIn, Lock, EnvelopeSimple } from 'phosphor-react-native'
 
 import Google from '@assets/socialNetwork/google.png'
@@ -22,9 +25,9 @@ import {
 } from './styles'
 
 import { Input } from '@components/Input'
-import { View } from 'react-native'
 
 export function Login() {
+  const navigation = useNavigation()
   return (
     <Container>
       <View>
@@ -62,7 +65,10 @@ export function Login() {
           </SocialNetworkButton>
         </ContainerLoginWithSocialNetwork>
 
-        <EnterButton activeOpacity={0.8}>
+        <EnterButton
+          activeOpacity={0.8}
+          onPress={() => navigation.navigate('registration')}
+        >
           <EnterButtonTitle>
             Não tem uma conta ainda? Registre-se
           </EnterButtonTitle>

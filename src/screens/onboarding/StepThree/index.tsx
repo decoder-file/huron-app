@@ -1,3 +1,4 @@
+import { useNavigation } from '@react-navigation/native'
 import { View } from 'react-native'
 
 import Image from '@assets/geometry/StepThreeImg.png'
@@ -13,6 +14,7 @@ import {
 } from './styles'
 
 export function StepThree() {
+  const navigation = useNavigation()
   return (
     <Container>
       <Img source={Image} />
@@ -22,7 +24,7 @@ export function StepThree() {
           <Description>Vamos te ajudar a alcançar seus objetivos!</Description>
         </View>
         <ContainerButton>
-          <Button />
+          <Button onPress={() => navigation.navigate('stepFour')} />
         </ContainerButton>
       </Contents>
     </Container>

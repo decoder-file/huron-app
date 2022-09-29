@@ -20,7 +20,7 @@ export const Img = styled.Image`
 
 export const ButtonStart = styled(Button)`
   background-color: ${({ theme }) => theme.COLORS.WHITE};
-  color: ${({ theme }) => theme.COLORS.GREEN_200};
+  color: ${({ theme }) => theme.COLORS.BLACK};
 `
 
 export const Title = styled.Text`
